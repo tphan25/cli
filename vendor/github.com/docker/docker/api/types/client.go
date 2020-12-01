@@ -249,6 +249,12 @@ type ImageLoadResponse struct {
 	JSON bool
 }
 
+// ImageMakeCacheResponse returns information to the client upon sending make-cache request.
+type ImageMakeCacheResponse struct {
+	Body io.ReadCloser
+	JSON bool
+}
+
 // ImagePullOptions holds information to pull images.
 type ImagePullOptions struct {
 	All           bool
